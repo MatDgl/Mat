@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html onclick="saut()">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Jeu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="jeu">
+    <button onclick="jouer()">Jouer</button>
+    <div onclick="saut()" id="jeu">
         <div id="perso"></div>
         <div id="block"></div>
     </div>
-    <p>Score: <span id="scoreSpan"></span></p>
+    <p id="score">Score: <span id="scoreSpan"></span></p> <br>
+    <p id="click">Atteint le meilleur score !</p>
 </body>
 <script src="script.js"></script>
+
 </html>
