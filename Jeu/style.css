@@ -4,6 +4,10 @@
     overflow-x: hidden;
 }
 
+body {
+    background-color: #2e2e31;
+  }
+
 *::selection {
     background-color: #d9514acb;
 }
@@ -60,11 +64,11 @@
     }
 }
 
-#score {
+#score, #hscore {
     font-family: 'billabongregular';
     text-align: center;
     font-size:xx-large;
-    margin-bottom: 100px;;
+    margin-bottom: 10px;
 }
 
 @font-face {
@@ -98,27 +102,18 @@ button {
     }
   }
   
-  body {
-    background-color: #2e2e31;
-  }
-  
   #click {
-    color: #fffbf1;
-    font-family: helvetica, arial, sans-serif;
-    font-size: 38px;
+    color:white;
+    font-family: 'billabongregular';
+    font-size: 45px;
     font-weight: bold;
-    text-decoration: none;
-    letter-spacing: -2px;
-    margin: 0;
+    letter-spacing: 2px;
     position: absolute;
-    top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     overflow:unset;
     text-align: center;
-    margin-top: 120px;
-    
-    
+    margin-top: 70px;  
   }
   
   #click:before {
@@ -128,8 +123,6 @@ button {
     left: 50%;
     width: 100%;
     top: 50%;
-    display: block;
     border: 15px solid #d9524a;
-    transform: translateX(-50%) translateY(-50%) rotate(0deg);
     animation: 10s infinite alternate ease-in-out tipsy;
   }

@@ -12,8 +12,12 @@ function saut() {
     },300)
 }
 
+var highscore = localStorage.getItem('highscore');
+document.getElementById("highscore").innerHTML = Math.floor(highscore/100);
+
 function jouer() {
     click.remove();
+    document.getElementById("hscore").remove();
     block.style.animation = 'block 1s infinite linear';
     var mort = setInterval(function() {
         var persoTop =
@@ -21,6 +25,9 @@ function jouer() {
         var blockLeft =
         parseInt(window.getComputedStyle(block).getPropertyValue("left"));
         if(blockLeft<20 && blockLeft>0 && persoTop >= 130) {
+            if (counter > highscore) {
+                localStorage.setItem('highscore',counter);
+            }
             block.style.animation = "none";
             alert("Tu as perdu. Score : " +Math.floor(counter/100));
             window.location.reload();
