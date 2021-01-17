@@ -1,6 +1,12 @@
 var character = document.getElementById("character");
 var block = document.getElementById("block");
 var click = document.getElementById("click");
+
+if (document.getElementById("switch").checked = true) {
+    document.getElementById("audio").play();
+}
+
+document.getElementById("audio").play();
 var counter=0;
 
 function saut() {

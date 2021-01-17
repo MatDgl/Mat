@@ -105,7 +105,7 @@ button {
   #click {
     color:white;
     font-family: 'billabongregular';
-    font-size: 45px;
+    font-size: 40px;
     font-weight: bold;
     letter-spacing: 2px;
     position: absolute;
@@ -126,3 +126,10 @@ button {
     border: 15px solid #d9524a;
     animation: 10s infinite alternate ease-in-out tipsy;
   }
+
+  /*Bouton On / Off Musique*/
+
+input {
+    position:absolute;
+}
+  
