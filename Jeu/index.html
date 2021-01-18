@@ -5,14 +5,16 @@
     <title>Jeu</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onclick="saut();" onkeypress="saut()">
+<body onkeypress="saut()">
     <h1>Dodge Block</h1>
     <audio src="audio/One_piece.mp3" id="audio" loop="true"></audio>
-    <p id="music">Musique</p>
-    <input type="checkbox" id="toggle" class="checkbox"/>
-    <label for="toggle" class="check"></label>
+    <div>
+        <p id="music">Musique</p>
+        <input type="checkbox" id="toggle" class="checkbox"/>
+        <label for="toggle" class="check"></label>
+    </div>
     <button id="jouer" onclick="jouer(); musique()">Jouer</button>
-    <div id="jeu">
+    <div onclick="saut()" id="jeu">
         <div id="perso"></div>
         <div id="block"></div>
     </div>

@@ -186,3 +186,46 @@ button {
 .checkbox { 
     display : none;
  }
+
+  /* Pour Téléphones */
+
+@media screen and (min-width: 1150px) and (max-width: 1750px) { 
+
+    #music {
+        padding-left: 20%;
+    }
+
+    .check {
+        left: 21%;
+    }
+
+}
+
+@media screen and (min-width: 950px) and (max-width: 1150px) { 
+
+    #music {
+        padding-left: 8%;
+    }
+
+    .check {
+        left: 9%;
+        top: 32%;
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 950px) { 
+
+    .check {
+        top: 20%;
+    }
+
+}
+
+@media screen and (max-width: 500px) { 
+
+    .check {
+        top: 10%;
+    
+
+}
