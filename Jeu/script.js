@@ -1,14 +1,20 @@
 var character = document.getElementById("character");
 var block = document.getElementById("block");
 var click = document.getElementById("click");
-
-if (document.getElementById("switch").checked = true) {
-    document.getElementById("audio").play();
-}
-
-document.getElementById("audio").play();
 var counter=0;
 
+function musique() {
+    var audio = document.getElementById("audio");
+    var checkBox = document.getElementById("toggle");
+    if (checkBox.checked == true){
+        audio.play();
+    }
+}
+
+function keydownFunction() {
+    document.getElementById("jeu").saut();
+  }
+    
 function saut() {
     if (perso.classList != "animate") {
         perso.classList.add("animate");
@@ -23,7 +29,13 @@ document.getElementById("highscore").innerHTML = Math.floor(highscore/100);
 
 function jouer() {
     click.remove();
+    document.getElementById("jouer").remove();
     document.getElementById("hscore").remove();
+    document.getElementById("music").remove();
+    while (document.getElementsByClassName('check')[0]) {
+        document.getElementsByClassName('check')[0].remove();
+    }
+    jeu.style.marginTop = "3.65%";
     block.style.animation = 'block 1s infinite linear';
     var mort = setInterval(function() {
         var persoTop =

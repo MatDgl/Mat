@@ -64,11 +64,32 @@ body {
     }
 }
 
+h1{
+    font-family: 'billabongregular';
+    text-align: center;
+    background-image: linear-gradient(to left, violet, indigo, blue, #d9524a, yellow, orange, green);   
+    -webkit-background-clip: text;
+    -moz-background-clip: text; 
+    background-clip: text;
+      color: transparent;
+    font-size: 5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 #score, #hscore {
     font-family: 'billabongregular';
     text-align: center;
     font-size:xx-large;
     margin-bottom: 10px;
+}
+
+#music {
+    font-family: 'billabongregular';
+    position: fixed;
+    padding-top: 6%;
+    padding-left: 30%;
+    font-size:xx-large;
 }
 
 @font-face {
@@ -129,7 +150,39 @@ button {
 
   /*Bouton On / Off Musique*/
 
-input {
-    position:absolute;
+.check { 
+    position : fixed ;
+    display : inline-block;
+    width : 40px;
+    height : 20px;
+    border: 2px solid #d9524a;
+    border-radius: 20px;
+    cursor: pointer;
+    left:31%;
+    top:35%;
 }
-  
+
+.check::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color:  #d9524a;
+    top: 1px;
+    left: 1px;
+    transition: all 0.3s;
+  }
+
+.checkbox:checked + .check::after {
+    left : 20px; 
+}
+
+
+.checkbox:checked + .check {
+    background-color: rgb(187, 236, 112);
+}
+
+.checkbox { 
+    display : none;
+ }
