@@ -7,16 +7,18 @@
 </head>
 <body onkeypress="saut()">
     <h1>Dodge Block</h1>
-    <audio src="audio/One_piece.mp3" id="audio" loop="true"></audio>
+    <audio src="audio/naruto.mp3" id="audiofacile" loop="true"></audio>
+    <audio src="audio/one_piece.mp3" id="audiomoyen" loop="true"></audio>
+    <audio src="audio/snk.mp3" id="audiodifficile" loop="true"></audio>
     <div>
         <p id="music">Musique</p>
         <input type="checkbox" id="toggle" class="checkbox"/>
         <label for="toggle" class="check"></label>
     </div>
     <div id="interfacejeu">
-        <button id="facile" class="jouer" onclick="jouerf(); musique();">Facile</button>
-        <button id="moyen" class="jouer" onclick="jouerm(); musique();">Moyen</button>
-        <button id="difficile" class="jouer" onclick="jouerd(); musique();">Difficile</button>
+        <button id="facile" class="jouer" onclick="jouer(1.3); musique('audiofacile');">Facile</button>
+        <button id="moyen" class="jouer" onclick="jouer(1); musique('audiomoyen');">Moyen</button>
+        <button id="difficile" class="jouer" onclick="jouer(0.7); musique('audiodifficile');">Difficile</button>
         <div onclick="saut()" id="jeu">
             <div id="perso"></div>
             <div id="block"></div>

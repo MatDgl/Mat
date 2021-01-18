@@ -3,10 +3,11 @@ var block = document.getElementById("block");
 var click = document.getElementById("click");
 var counter=0;
 
-function musique() {
-    var audio = document.getElementById("audio");
+function musique(audio) {
+    var audio = document.getElementById(audio);
     var checkBox = document.getElementById("toggle");
     if (checkBox.checked == true){
+        audio.volume = 0.1;
         audio.play();
     }
 }
@@ -27,7 +28,7 @@ function saut() {
 var highscore = localStorage.getItem('highscore');
 document.getElementById("highscore").innerHTML = Math.floor(highscore/100);
 
-function jouerf() {
+function jouer(vitesse) {
     click.remove();
     document.getElementById("facile").remove();
     document.getElementById("moyen").remove();
@@ -38,71 +39,7 @@ function jouerf() {
         document.getElementsByClassName('check')[0].remove();
     }
     jeu.style.marginTop = "3.65%";
-    block.style.animation = 'block 1s infinite linear';
-    var mort = setInterval(function() {
-        var persoTop =
-        parseInt(window.getComputedStyle(perso).getPropertyValue("top"));
-        var blockLeft =
-        parseInt(window.getComputedStyle(block).getPropertyValue("left"));
-        if(blockLeft<20 && blockLeft>0 && persoTop >= 130) {
-            if (counter > highscore) {
-                localStorage.setItem('highscore',counter);
-            }
-            block.style.animation = "none";
-            alert("Tu as perdu. Score : " +Math.floor(counter/100));
-            window.location.reload();
-            counter=0;
-        } else {
-            counter ++;
-            document.getElementById("scoreSpan").innerHTML = Math.floor(counter/100);
-        }
-    },10);
-}
-
-function jouerm() {
-    click.remove();
-    document.getElementById("facile").remove();
-    document.getElementById("moyen").remove();
-    document.getElementById("difficile").remove();
-    document.getElementById("hscore").remove();
-    document.getElementById("music").remove();
-    while (document.getElementsByClassName('check')[0]) {
-        document.getElementsByClassName('check')[0].remove();
-    }
-    jeu.style.marginTop = "3.65%";
-    block.style.animation = 'block 0.85s infinite linear';
-    var mort = setInterval(function() {
-        var persoTop =
-        parseInt(window.getComputedStyle(perso).getPropertyValue("top"));
-        var blockLeft =
-        parseInt(window.getComputedStyle(block).getPropertyValue("left"));
-        if(blockLeft<20 && blockLeft>0 && persoTop >= 130) {
-            if (counter > highscore) {
-                localStorage.setItem('highscore',counter);
-            }
-            block.style.animation = "none";
-            alert("Tu as perdu. Score : " +Math.floor(counter/100));
-            window.location.reload();
-            counter=0;
-        } else {
-            counter ++;
-            document.getElementById("scoreSpan").innerHTML = Math.floor(counter/100);
-        }
-    },10);
-}
-
-function jouerd() {
-    click.remove();
-    document.getElementById("facile").remove();
-    document.getElementById("moyen").remove();
-    document.getElementById("difficile").remove();
-    document.getElementById("hscore").remove();
-    document.getElementById("music").remove();
-    while (document.getElementsByClassName('check')[0]) {
-        document.getElementsByClassName('check')[0].remove();
-    }
-    jeu.style.marginTop = "3.65%";
-    block.style.animation = 'block 0.7s infinite linear';
+    block.style.animation = 'block ' + vitesse + 's infinite linear';
     var mort = setInterval(function() {
         var persoTop =
         parseInt(window.getComputedStyle(perso).getPropertyValue("top"));
