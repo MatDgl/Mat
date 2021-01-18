@@ -27,9 +27,11 @@ function saut() {
 var highscore = localStorage.getItem('highscore');
 document.getElementById("highscore").innerHTML = Math.floor(highscore/100);
 
-function jouer() {
+function jouerf() {
     click.remove();
-    document.getElementById("jouer").remove();
+    document.getElementById("facile").remove();
+    document.getElementById("moyen").remove();
+    document.getElementById("difficile").remove();
     document.getElementById("hscore").remove();
     document.getElementById("music").remove();
     while (document.getElementsByClassName('check')[0]) {
@@ -37,6 +39,70 @@ function jouer() {
     }
     jeu.style.marginTop = "3.65%";
     block.style.animation = 'block 1s infinite linear';
+    var mort = setInterval(function() {
+        var persoTop =
+        parseInt(window.getComputedStyle(perso).getPropertyValue("top"));
+        var blockLeft =
+        parseInt(window.getComputedStyle(block).getPropertyValue("left"));
+        if(blockLeft<20 && blockLeft>0 && persoTop >= 130) {
+            if (counter > highscore) {
+                localStorage.setItem('highscore',counter);
+            }
+            block.style.animation = "none";
+            alert("Tu as perdu. Score : " +Math.floor(counter/100));
+            window.location.reload();
+            counter=0;
+        } else {
+            counter ++;
+            document.getElementById("scoreSpan").innerHTML = Math.floor(counter/100);
+        }
+    },10);
+}
+
+function jouerm() {
+    click.remove();
+    document.getElementById("facile").remove();
+    document.getElementById("moyen").remove();
+    document.getElementById("difficile").remove();
+    document.getElementById("hscore").remove();
+    document.getElementById("music").remove();
+    while (document.getElementsByClassName('check')[0]) {
+        document.getElementsByClassName('check')[0].remove();
+    }
+    jeu.style.marginTop = "3.65%";
+    block.style.animation = 'block 0.85s infinite linear';
+    var mort = setInterval(function() {
+        var persoTop =
+        parseInt(window.getComputedStyle(perso).getPropertyValue("top"));
+        var blockLeft =
+        parseInt(window.getComputedStyle(block).getPropertyValue("left"));
+        if(blockLeft<20 && blockLeft>0 && persoTop >= 130) {
+            if (counter > highscore) {
+                localStorage.setItem('highscore',counter);
+            }
+            block.style.animation = "none";
+            alert("Tu as perdu. Score : " +Math.floor(counter/100));
+            window.location.reload();
+            counter=0;
+        } else {
+            counter ++;
+            document.getElementById("scoreSpan").innerHTML = Math.floor(counter/100);
+        }
+    },10);
+}
+
+function jouerd() {
+    click.remove();
+    document.getElementById("facile").remove();
+    document.getElementById("moyen").remove();
+    document.getElementById("difficile").remove();
+    document.getElementById("hscore").remove();
+    document.getElementById("music").remove();
+    while (document.getElementsByClassName('check')[0]) {
+        document.getElementsByClassName('check')[0].remove();
+    }
+    jeu.style.marginTop = "3.65%";
+    block.style.animation = 'block 0.7s infinite linear';
     var mort = setInterval(function() {
         var persoTop =
         parseInt(window.getComputedStyle(perso).getPropertyValue("top"));

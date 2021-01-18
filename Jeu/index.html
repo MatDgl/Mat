@@ -13,14 +13,18 @@
         <input type="checkbox" id="toggle" class="checkbox"/>
         <label for="toggle" class="check"></label>
     </div>
-    <button id="jouer" onclick="jouer(); musique()">Jouer</button>
-    <div onclick="saut()" id="jeu">
-        <div id="perso"></div>
-        <div id="block"></div>
+    <div id="interfacejeu">
+        <button id="facile" class="jouer" onclick="jouerf(); musique();">Facile</button>
+        <button id="moyen" class="jouer" onclick="jouerm(); musique();">Moyen</button>
+        <button id="difficile" class="jouer" onclick="jouerd(); musique();">Difficile</button>
+        <div onclick="saut()" id="jeu">
+            <div id="perso"></div>
+            <div id="block"></div>
+        </div>
+        <p id="score">Score: <span id="scoreSpan"></span></p>
+        <p id="hscore">Meilleur Score: <span id="highscore"></span></p> <br>
+        <p id="click">Appuie sur une touche pour sauter !</p>
     </div>
-    <p id="score">Score: <span id="scoreSpan"></span></p>
-    <p id="hscore">Meilleur Score: <span id="highscore"></span></p> <br>
-    <p id="click">Appuie sur une touche pour sauter !</p>
 </body>
 <script src="script.js"></script>
 
