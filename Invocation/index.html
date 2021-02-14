@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Summon</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<ul>
+    <li><a href="../Jeu/index.html">Jeu</a></li>
+    <li><a class="active" href="">Invocation</a></li>
+</ul>
+
 <body>
-    <button onclick="single();">Single Invocation</button>
-    <button onclick="multi();">Multi Invocation</button>
+    <audio src="audio/snk.mp3" id="snk"></audio>
+    <div id="head">
+        <h1>Invocation</h1>
+        <button onclick="single();">Single Invocation</button>
+        <button onclick="multi();">Multi Invocation</button>
+    </div>
     <div id="divimage"></div>
     <script src="script.js"></script>
 </body>

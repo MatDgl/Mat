@@ -1,7 +1,72 @@
+
+*::selection {
+    background-color: #d9514acb;
+}
+
+body {
+    background-color: #2e2e3183;
+    margin: auto;
+}
+
 #divimage {
     padding-top: 100px;
 }
 
 .nom {
     text-align: center;
+}
+
+h1 {
+    font-family: 'billabongregular';
+    background-image: linear-gradient(to left, violet, indigo, blue, #d9524a, yellow, orange, green);   
+    -webkit-background-clip: text;
+    -moz-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+    font-size: 5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#head {
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'billabongregular';
+    src: url('font/billabong-webfont.woff2') format('woff2'),
+         url('font/billabong-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Barre de navigation */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
 }

@@ -14,9 +14,12 @@ function musique(audio) {
 
 function keydownFunction() {
     document.getElementById("jeu").saut();
-  }
+}
     
 function saut() {
+    var audioj = document.getElementById('jump');
+    audioj.volume = 0.1;
+    audioj.play();
     if (perso.classList != "animate") {
         perso.classList.add("animate");
     }
@@ -50,6 +53,9 @@ function jouer(vitesse) {
                 localStorage.setItem('highscore',counter);
             }
             block.style.animation = "none";
+            var audiod = document.getElementById('death2');
+            audiod.volume = 0.1;
+            audiod.play();
             alert("Tu as perdu. Score : " +Math.floor(counter/100));
             window.location.reload();
             counter=0;

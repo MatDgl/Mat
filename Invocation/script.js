@@ -3,22 +3,27 @@ function single() {
     var div = document.getElementById("divimage");
     div.innerHTML="";
     var x = summon();
-        var divperso = document.createElement("div");
-        divperso.style.border = "solid darkcyan";
-        divperso.style.padding= "5px";
-        div.appendChild(divperso);
-        var img = document.createElement("img");
-        img.setAttribute("src", `img/perso${x}.png`);
-        img.setAttribute("width", "300");
-        divperso.appendChild(img);
-        div.style.height = "500px";
-        div.style.width = "315px";
-        div.style.margin = "auto";
-        var h2 = document.createElement("h2");
-        h2.setAttribute("class", "nom")
-        h2.textContent = $char;
-        divperso.appendChild(h2);
-        var nom = document.getElementsByClassName("nom");
+    var divperso = document.createElement("div");
+    divperso.style.border = "solid darkcyan";
+    divperso.style.padding= "5px";
+    div.appendChild(divperso);
+    var img = document.createElement("img");
+    img.setAttribute("src", `img/perso${x}.png`);
+    img.setAttribute("width", "300");
+    divperso.appendChild(img);
+    div.style.height = "500px";
+    div.style.width = "315px";
+    div.style.margin = "auto";
+    var h2 = document.createElement("h2");
+    h2.setAttribute("class", "nom")
+    h2.textContent = $char;
+    divperso.appendChild(h2);
+    var nom = document.getElementsByClassName("nom");
+    if ( x == 1 ) {
+        var audio = document.getElementById("snk");
+        audio.volume = 0.1;
+        audio.play();
+    }
 }
 
 function multi() {
@@ -45,6 +50,11 @@ function multi() {
         h2.textContent = $char;
         divperso.appendChild(h2);
         var nom = document.getElementsByClassName("nom");
+        if ( x == 1 ) {
+            var audio = document.getElementById("snk");
+            audio.volume = 0.1;
+            audio.play();
+        }
     }
 }
 
