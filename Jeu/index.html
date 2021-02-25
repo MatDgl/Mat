@@ -6,28 +6,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<ul>
-    <li><a class="active" href="">Jeu</a></li>
-    <li><a href="../Invocation/index.html">Invocation</a></li>
+<ul id="liste_der">
+    <li class="liste_elem"><a class="active" href="">Jeu</a></li>
+    <li class="liste_elem"><a href="../Site VR/index.html">Site VR</a></li>
+    <li class="liste_elem"><a href="../Invocation/index.html">Invocation</a></li>
+    <li class="liste_elem"><a href="https://volleyphp.000webhostapp.com/match/match.php">VolleyClub</a></li>
 </ul>
   
 <body onkeypress="saut()">
     <h1>Dodge Block</h1>
-    <audio src="audio/naruto.mp3" id="audiofacile" loop="true"></audio>
-    <audio src="audio/op.mp3" id="audiomoyen" loop="true"></audio>
-    <audio src="audio/snk.mp3" id="audiodifficile" loop="true"></audio>
     <audio src="audio/jump.mp3" id="jump"></audio>
-    <audio src="audio/death1.mp3" id="death1"></audio>
-    <audio src="audio/death2.mp3" id="death2"></audio>
-    <div>
+    <audio src="audio/death.mp3" id="death"></audio>
+    <!-- <div>
         <p id="music">Musique</p>
         <input type="checkbox" id="toggle" class="checkbox"/>
         <label for="toggle" class="check"></label>
-    </div>
+    </div> -->
     <div id="interfacejeu">
-        <button id="facile" class="jouer" onclick="jouer(1.3); musique('audiofacile');">Facile</button>
-        <button id="moyen" class="jouer" onclick="jouer(1); musique('audiomoyen');">Moyen</button>
-        <button id="difficile" class="jouer" onclick="jouer(0.7); musique('audiodifficile');">Difficile</button>
+        <button id="facile" class="jouer" onclick="jouer(1.3); //musique('audiofacile');">Facile</button>
+        <button id="moyen" class="jouer" onclick="jouer(1); //musique('audiomoyen');">Moyen</button>
+        <button id="difficile" class="jouer" onclick="jouer(0.7); //musique('audiodifficile');">Difficile</button>
         <div onclick="saut()" id="jeu">
             <div id="perso"></div>
             <div id="block"></div>

@@ -1,0 +1,286 @@
+#global{            /*Bloc pour la division globale de la page web*/
+	margin:0 auto;
+	max-width: 1200px;
+	height:auto;
+	box-shadow: 0 0 30px rgba(0, 0, 0, .7);
+}
+
+a:hover {
+  background-color: green;
+}
+
+body {
+    margin: auto;
+}
+
+/* Barre de navigation */
+
+#liste_der {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+  }
+  
+  .liste_elem {
+	float: left;
+  }
+  
+  .liste_elem a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  
+  .liste_elem a:hover {
+	background-color: #111;
+  }
+  
+  .active {
+    background-color: rgb(202, 55, 55);
+  }
+  
+
+#bigone{
+	opacity: 0.8;
+	background-color:black; /*Ensemble des propriétés qui s'appliquent à tous les blocs du "bandeau" menu de navigation*/
+	width:100%;
+	border-bottom: 8px solid green;
+}
+
+#logo{ 						/*le logo du casque vr dans le menu de navigation*/		
+	padding: 0.5% 0% 0.5% 0.8%;
+	float: left; 
+}
+
+#nav{                /*Bloc nav pour le menu de nos trois domaine de travail*/
+	max-width:100% ; 
+	padding-left:35% ;
+}
+
+#nav li{
+	padding: 0.8% 5% 0.2% 0%; 
+	float:left;
+}
+
+#contact{            /*bloc contact pour le logo contact dans notre menu*/
+	padding-right: 0.8%; 
+	padding-top:1%; 
+	float:right;
+}
+
+  #clearfloat{
+	clear: both;
+}
+
+#presentation {       /*Début de notre premiere bloc*/
+	padding-top : 10px;
+	padding-bottom: 1px;
+	background:rgb(0,0,0,0.8);
+	text-align:center;
+	
+}
+
+#titre {
+	color : white;
+	font-family: Verdana, sans-serif ;
+	text-align: center;	
+}
+#image {
+	display : block ; 
+	margin-left: auto ;
+	margin-right: auto ;  
+	margin-bottom: 5% ;
+	border-radius: 2% ;
+	height : auto ;
+	opacity : 0.9 ;
+	
+}				/*Fin de notre premiere bloc*/
+
+#partie1 {      /*Début de notre second bloc*/
+	padding-top : 4% ;
+	color: black;
+    background-color:white;
+    padding-bottom : 10%;
+}
+
+#image2 {
+	margin-top:6%;
+	margin-left: 4%;
+	display: inline-block;
+	margin-bottom: -2%;
+	border-radius : 2%;
+}
+
+#question{
+    text-align: center;
+    font-family: verdana;
+}
+
+ partiedroite1{
+    margin-top:10%;
+    margin-left: 13%;
+    display: inline-block;
+    margin-bottom: -2%;	
+}
+
+#def{
+    margin-top: -8%;
+    margin-left: 30px;
+    float:left;
+    max-width: 40%;
+    text-align: justify;
+    line-height: 190%;
+    font-family: verdana;
+    font-size: 115%;
+	padding-top : 110px;
+}						/*Fin de notre second bloc*/
+
+#partie2{				/*Début de notre troisième bloc*/
+    background-color:#e6e6e6;
+    color: black;
+	padding-bottom : 15%;
+}
+
+#image3{
+    margin-left : 30px;
+    display: inline-block;
+    margin-bottom: -2%;
+    border-radius : 2% ;
+	margin-top : 10%;
+}
+#entetepara2 { 
+	margin-top:-17%;
+}
+
+#def2{
+	max-height:500px;
+    margin-top: 1%;
+    margin-right: 30px;
+    float: right;
+    max-width: 50%;
+    text-align: justify;
+    line-height: 190%;
+    font-family: verdana;
+    font-size: 115%;
+    padding-top : 100px; 
+}
+
+#question2{
+    padding-top:2%;
+    text-align: center;
+    font-family: verdana;
+}					/*Fin de notre troisième bloc*/
+
+
+#partie3{			/*Début de notre quatrième bloc*/
+	color: black;
+    background-color:white;
+	padding-bottom : 45%;
+	padding-top : 6%;
+}
+
+#question3{
+    text-align: center;
+    font-family: verdana;
+}
+
+#image4{
+    margin-bottom: -2%;
+    border-radius : 2% ;
+	margin-right : 30px;
+	margin-top : 15%;
+	float: right;
+}
+#entetepara3{
+	margin-top:-15%;
+}
+
+#def3{
+	max-height: 600px;
+	margin-top: -2%;
+    margin-left: 30px;
+    float:left;
+    width: 50%;
+    text-align: justify;
+    line-height: 190%;
+    font-family: verdana;
+    font-size: 115%;
+	padding-top : 130px;
+}						    /*Fin de notre quatrième bloc*/
+
+/*Début des propriétés s'appliquant au bas de page*/
+
+#bp{
+	margin-top: 30px;
+	background-color: black;
+	opacity: 0.8;
+	line-height: 120%;
+	font-family: verdana;
+	color:white;
+	border-top:5px solid green;
+	border-bottom: 10px solid green;
+	width: 100%;
+	display:inline-block;
+}
+
+#gauche{
+	padding-bottom:10px;
+	margin-bottom:30px;
+	border-right:2px solid green;
+	width:48%; 
+	text-align: center;
+	position: relative;
+	top: 22px;
+}
+
+#droite{
+	float :right;
+	width: 48%;
+	margin-left: 100px;
+	margin-top: -193px;
+	position: relative;
+	bottom: 23px;
+}
+
+#gauche p{
+	font-size:100%;
+	line-height: 180%;
+}
+
+#fondateurs{
+	padding-bottom:10px;
+	padding-left:30px;
+	margin-left: 15%;
+	margin-right: 20%;
+	line-height: 100%;
+	font-size: 120%;
+}
+
+#nouscontacter{
+	margin-left:20%;
+	padding:0.5%;
+	font-size: 120%;
+}
+
+#droite img{
+	height: auto;
+} 
+
+#logocontact{
+	margin-left:210px;
+	position : relative;
+	top : 30px;
+}
+
+#logoiut{
+	border-radius: 2%;
+	float:right;
+	position: relative;
+	top : 23px;
+}
+
+/*Fin des propriétés s'appliquant au bas de page*/

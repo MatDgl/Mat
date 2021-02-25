@@ -28,6 +28,14 @@ h1 {
     margin-bottom: 10px;
 }
 
+h3 {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 500px;
+}
+
 #head {
     text-align: center;
 }
@@ -43,30 +51,31 @@ h1 {
 
 /* Barre de navigation */
 
-ul {
+#liste_der {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-}
-
-li {
+  }
+  
+  .liste_elem {
     float: left;
-}
-
-li a {
+  }
+  
+  .liste_elem a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
-
-li a:hover {
+  }
+  
+  .liste_elem a:hover {
     background-color: #111;
-}
-
-.active {
-    background-color: #4CAF50;
-}
+  }
+  
+  .active {
+    background-color: rgb(202, 55, 55);
+  }
+  

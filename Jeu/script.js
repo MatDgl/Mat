@@ -1,16 +1,17 @@
+
 var character = document.getElementById("character");
 var block = document.getElementById("block");
 var click = document.getElementById("click");
 var counter=0;
 
-function musique(audio) {
-    var audio = document.getElementById(audio);
-    var checkBox = document.getElementById("toggle");
-    if (checkBox.checked == true){
-        audio.volume = 0.1;
-        audio.play();
-    }
-}
+// function musique(audio) {
+//     var audio = document.getElementById(audio);
+//     var checkBox = document.getElementById("toggle");
+//     if (checkBox.checked == true){
+//         audio.volume = 0.1;
+//         audio.play();
+//     }
+// }
 
 function keydownFunction() {
     document.getElementById("jeu").saut();
@@ -37,7 +38,7 @@ function jouer(vitesse) {
     document.getElementById("moyen").remove();
     document.getElementById("difficile").remove();
     document.getElementById("hscore").remove();
-    document.getElementById("music").remove();
+    // document.getElementById("music").remove();
     while (document.getElementsByClassName('check')[0]) {
         document.getElementsByClassName('check')[0].remove();
     }
@@ -53,8 +54,8 @@ function jouer(vitesse) {
                 localStorage.setItem('highscore',counter);
             }
             block.style.animation = "none";
-            var audiod = document.getElementById('death2');
-            audiod.volume = 0.1;
+            var audiod = document.getElementById('death');
+            audiod.volume = 0.5;
             audiod.play();
             alert("Tu as perdu. Score : " +Math.floor(counter/100));
             window.location.reload();
