@@ -1,6 +1,6 @@
 
 body {
-    background-color: #fff1f1;
+    background-color: #000000e0;
     margin: auto;
 }
 
@@ -21,7 +21,7 @@ body {
     padding: 0;
     overflow: hidden;
     background-color: #444;
-    filter: drop-shadow(2px 4px 6px #d9514acb);
+    filter: drop-shadow(2px 4px 6px black);
   }
   
 .liste_elem {
@@ -41,15 +41,15 @@ body {
 }
 
 .active {
-  background-color: #d9514acb;
+  background-color: black;
 }
 
 #img {
-    border: 10px solid #d9514acb;
+    border:6px solid black;
     border-radius: 10px;
     display: block;
     margin: 5% auto 2% auto;
-    filter: drop-shadow(2px 4px 6px #d9514acb);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 figcaption {
@@ -60,11 +60,15 @@ figcaption {
   margin-bottom: 20px;
 }
 
+#mailtxt{
+  color: rgb(141, 141, 247);
+}
+
 
 h1 {
     text-transform: uppercase;
     font-size: 40px;
-    color: #444;
+    color: white;
     text-align: center;
     letter-spacing: 1px;}
 
@@ -72,46 +76,68 @@ h2 {
     margin-top: 10%;
     text-transform: uppercase;
     font-size: 30px;
-    color: #444;
+    color: white;
     letter-spacing: 1px;
 }
 
 h4 {
-    margin-top: 10%;
+    margin: 6% 6%;
     text-transform: uppercase;
     font-size: 20px;
-    color: #444;
+    color: white;
     letter-spacing: 1px;
 }
 
+#blocks{
+  margin-top: 4%;
+}
+
+#caption_age{
+  background-color:rgb(0, 0, 0);
+  opacity:90%;
+  text-align: center;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
 .left {
-  margin-top: 12%;
+  margin-top: 8%;
+  margin-left: 50px;
   float: left;
   width: 30%;
   text-align: center;
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+
+.middle {
+  width: 30%;
+  margin: auto;
 }
 
 .right {
-  margin-top: 12%;
+  margin-top: 8%;
+  margin-right: 50px;
+  padding-bottom: 1%;
   float: right;
   width: 30%;
   text-align: center;
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 p {
     margin-top: 10%;
     font-size: 20px;
-    color: #111;
+    color: white;
     letter-spacing: 1px;
     line-height: 40px;
 }
 
 .separation {
     margin-top: 7%;
-    height: 0.75em;
-    background: #d9514acb;
-    display: block;
-    border-radius: 0.25em;
 }
 
 .lien {
@@ -119,4 +145,14 @@ p {
   display: block;
   margin: auto;
   margin-bottom: 10px;
+}
+
+#linkedin{
+  float: left;
+  margin: 10px 0 0 42%;
+}
+
+#mail{
+  float: right;
+  margin-right: 42%;
 }

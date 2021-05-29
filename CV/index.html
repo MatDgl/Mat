@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>CV</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 
 <ul id="liste_der">
@@ -17,48 +16,50 @@
 
 <body>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-4 left">
+    <div id="blocks">
 
-                <h4>Organisé, investi,
-                    créatif, ponctuel,
-                    respectueux. <br> <br> <br>
-                    Permis de conduire <br>
-                </h4>
-        
-                <h4>5 Avenue du Colonel
-                    Roche, Toulouse 31400
-                </h4>
+        <div class="left">
 
-            </div>
+            <h4>Organisé, investi,
+                créatif, ponctuel,
+                respectueux. <br> <br> <br>
+                Permis de conduire <br>
+            </h4>
 
-            <div class="col-sm-4">
+            <h4>5 Avenue du Colonel
+                Roche, Toulouse 31400
+            </h4>
 
-                <figure id="figure">
-                    <img id="img" src="img/pdp.jpeg" width="350px">
-                </figure>
-
-                <h1>Dangla Mathieu</h1>
-        
-            </div>
-            
-            <div class="col-sm-4 right">
-
-                <h4>+33 6 45 22 38 64 <br> <br>
-                    <a href="mailto:danglamathieu@gmail.com">danglamathieu@gmail.com</a>
-                </h4>
-        
-                <h4>Centres d’intérêt <br> <br>
-                    Sport
-                    - Musique
-                    - Dessin
-                    - Jeux-Vidéos
-                </h4>
-
-            </div>
         </div>
+
+        <div class="right">
+
+            <h4>+33 6 45 22 38 64 <br> <br>
+                <a id="mailtxt" href="mailto:danglamathieu@gmail.com">danglamathieu@gmail.com</a>
+            </h4>
+
+            <h4>Centres d’intérêt <br> <br>
+                Sport
+                - Musique
+                - Dessin
+                - Jeux-Vidéos
+            </h4>
+
+        </div>
+
+        
+        <div class="middle">
+
+            <figure id="figure">
+                <img id="img" src="img/pdp.jpeg" width="350px">
+            </figure>
+
+            <h1>Dangla Mathieu</h1>
+
+        </div>
+
     </div>
+
 
     <div id="contenu">
 
@@ -91,7 +92,7 @@
 
         <h2>Compétences et langues</h2>
 
-        <p> <b>Informatique</b> <br> <br>
+        <p> <b>INFORMATIQUE</b> <br> <br>
             Outils de gestion de travail à distance <br>
             Création et conception de sites web : HTML, CSS, PHP,
             JavaScript, Ajax <br>
@@ -99,9 +100,9 @@
             SQL : Interagir avec une base de donnée <br>
             UML : diagrammes de classe <br>
             Python : Calcul Scientifique et numérique <br>
-            Système d’exploitation Linux <br> <br>
+            Système d’exploitation Linux <br> <br> <br>
 
-            <b>Langues </b> <br> <br>
+            <b>LANGUES </b> <br> <br>
             Français <br>
             Anglais : B2-C1 <br>
             Espagnol : B1
@@ -109,9 +110,18 @@
 
         <hr class="separation">
 
-        <a class="lien" href="https://www.linkedin.com/in/mathieu-dangla/"><img width="50px" src="img/linkedin.jpg" alt="linkedin"/></a>
+        <div class="end">
+            <div id="linkedin">
 
-        <a class="lien" href="mailto:danglamathieu@gmail.com"><img width="50px" src="img/mail.png" alt="mail"/></a>
+                <a class="lien" href="https://www.linkedin.com/in/mathieu-dangla/"><img width="50px" src="img/linkedin.jpg" alt="linkedin"/></a>
+
+            </div>
+            <div id="mail">
+
+                <a class="lien" href="mailto:danglamathieu@gmail.com"><img width="50px" src="img/mail.png" alt="mail"/></a>
+
+            </div>
+        </div>
 
     </div>
     

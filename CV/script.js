@@ -8,7 +8,8 @@ img.addEventListener("mouseout",mouseout);
 
 function mouseover () {
     var age = document.createElement("figcaption");
-    age.innerHTML = "Né le 30/11/2001 - 19 ans.";
+    age.setAttribute("id", "caption_age");
+    age.innerHTML = "Né le 30/11/2001 - 19 ans";
    figure.appendChild(age);
 }
 
