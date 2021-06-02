@@ -48,7 +48,7 @@ body {
     border:6px solid black;
     border-radius: 10px;
     display: block;
-    margin: 5% auto 2% auto;
+    margin: auto;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
@@ -63,6 +63,11 @@ figcaption {
 #mailtxt{
   color: rgb(141, 141, 247);
 }
+
+#nomprenom{
+  margin-top: 10%;
+}
+
 
 
 h1 {
